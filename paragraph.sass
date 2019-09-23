@@ -1,0 +1,148 @@
+body 
+  font-size: 10px  
+  line-height: 1.4
+  // font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Hind', sans-serif;
+  margin: 0
+  padding: 0
+  width: 100vw
+  overflow-x: hidden
+p 
+  font-size: 1.6rem
+  margin: 0 0 0.5rem 0
+  line-height: 1.4 
+  color: darkslategray  
+h1,h2,h3,h4,h5,h6 
+  // font-family: 'DM Serif Display', serif
+  font-family: 'Playfair Display SC', serif
+  margin: 0 0 0.5rem 0
+picture, img 
+  display: block
+picture
+  max-width: 100%  
+  img
+    width: 100% 
+button
+  display: flex 
+  flex-wrap: wrap     
+#configuration        
+  position: fixed
+  left: 0
+  right: 0
+  top: 0  
+  background-color: #ffffff78
+  padding: 0.5rem
+  display: flex
+  flex-wrap: wrap
+  align-items: center  
+.paragraph-content
+  border: 1px dashed lightgrey
+  padding: 2rem  
+  font-size: 0.6rem
+  @media (min-width: 768px)
+    font-size: 0.8rem
+  @media (min-width: 1200px)
+    font-size: 1rem
+.container
+  margin: 0 auto
+  padding: 4rem 0 
+  width: 90vw   
+  @media (min-width: 1200px)    
+    width: 70vw   
+//paragraph  
+.content 
+  p 
+    font-size: 1.6em  
+.image 
+  margin-bottom: 0.5rem    
+.headline 
+  font-size: 3.2em
+  line-height: 1.2
+  font-weight: 900
+  text-transform: uppercase
+.subtitle 
+  font-size: 2.4em  
+  line-height: 1.2  
+  font-weight: 700 
+  color: black
+.template-1
+  display: grid
+  .headline
+    order: 1
+  .subtitle
+    order: 3
+  .image
+    order: 2
+  .content  
+    order: 4
+.template-2
+  display: grid
+  .headline
+    order: 2
+    margin-bottom: 0
+  .subtitle
+    order: 3
+  .image
+    order: 1
+  .content  
+    order: 4        
+.template-3
+  display: grid
+  // grid-template-columns: 1fr minmax(30rem,5fr) 1fr
+  // grid-template-rows: 1fr auto 1fr auto auto
+  .headline
+    order: 1
+    @media (min-width: 480px)
+      order: 2    
+      grid-row: 2/3
+      grid-column: 2/3
+      background-color: black
+      color: white
+      text-align: center   
+      padding: 0.5rem 1rem 
+  .subtitle
+    order: 3
+    @media (min-width: 480px)
+      grid-row: 4
+      grid-column: 1/4
+  .image
+    order: 2
+    @media (min-width: 480px)
+      order: 1
+      grid-row: 1/4
+      grid-column: 1/4
+  .content  
+    order: 4 
+    @media (min-width: 480px) 
+      grid-row: 5
+      grid-column: 1/4  
+.template-4
+  display: grid
+  // grid-template-columns: 1fr minmax(30rem,5fr) 1fr
+  // grid-template-rows: 1fr auto 1fr auto auto
+  .headline
+    order: 1
+    @media (min-width: 480px)
+      order: 2    
+      grid-row: 3
+      grid-column: 1/4
+      background-color: #00000073
+      color: white
+      text-align: center   
+      padding: 0.5rem 1rem 
+  .subtitle
+    order: 3
+    @media (min-width: 480px)
+      grid-row: 4
+      grid-column: 1/4
+  .image
+    order: 2
+    @media (min-width: 480px)
+      order: 1
+      grid-row: 1/4
+      grid-column: 1/4
+  .content  
+    order: 4 
+    @media (min-width: 480px) 
+      grid-row: 5
+      grid-column: 1/4        

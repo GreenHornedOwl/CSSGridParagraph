@@ -1,0 +1,212 @@
+/* line 1, paragraph.sass */
+body {
+  font-size: 10px;
+  line-height: 1.4;
+  font-family: 'Hind', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden; }
+
+/* line 10, paragraph.sass */
+p {
+  font-size: 1.6rem;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+  color: darkslategray; }
+
+/* line 15, paragraph.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display SC', serif;
+  margin: 0 0 0.5rem 0; }
+
+/* line 19, paragraph.sass */
+picture, img {
+  display: block; }
+
+/* line 21, paragraph.sass */
+picture {
+  max-width: 100%; }
+  /* line 23, paragraph.sass */
+  picture img {
+    width: 100%; }
+
+/* line 25, paragraph.sass */
+button {
+  display: flex;
+  flex-wrap: wrap; }
+
+/* line 28, paragraph.sass */
+#configuration {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #ffffff78;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+/* line 38, paragraph.sass */
+.paragraph-content {
+  border: 1px dashed lightgrey;
+  padding: 2rem;
+  font-size: 0.6rem; }
+  @media (min-width: 768px) {
+    /* line 38, paragraph.sass */
+    .paragraph-content {
+      font-size: 0.8rem; } }
+  @media (min-width: 1200px) {
+    /* line 38, paragraph.sass */
+    .paragraph-content {
+      font-size: 1rem; } }
+
+/* line 46, paragraph.sass */
+.container {
+  margin: 0 auto;
+  padding: 4rem 0;
+  width: 90vw; }
+  @media (min-width: 1200px) {
+    /* line 46, paragraph.sass */
+    .container {
+      width: 70vw; } }
+
+/* line 54, paragraph.sass */
+.content p {
+  font-size: 1.6em; }
+
+/* line 56, paragraph.sass */
+.image {
+  margin-bottom: 0.5rem; }
+
+/* line 58, paragraph.sass */
+.headline {
+  font-size: 3.2em;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+/* line 63, paragraph.sass */
+.subtitle {
+  font-size: 2.4em;
+  line-height: 1.2;
+  font-weight: 700;
+  color: black; }
+
+/* line 68, paragraph.sass */
+.template-1 {
+  display: grid; }
+  /* line 70, paragraph.sass */
+  .template-1 .headline {
+    order: 1; }
+  /* line 72, paragraph.sass */
+  .template-1 .subtitle {
+    order: 3; }
+  /* line 74, paragraph.sass */
+  .template-1 .image {
+    order: 2; }
+  /* line 76, paragraph.sass */
+  .template-1 .content {
+    order: 4; }
+
+/* line 78, paragraph.sass */
+.template-2 {
+  display: grid; }
+  /* line 80, paragraph.sass */
+  .template-2 .headline {
+    order: 2;
+    margin-bottom: 0; }
+  /* line 83, paragraph.sass */
+  .template-2 .subtitle {
+    order: 3; }
+  /* line 85, paragraph.sass */
+  .template-2 .image {
+    order: 1; }
+  /* line 87, paragraph.sass */
+  .template-2 .content {
+    order: 4; }
+
+/* line 89, paragraph.sass */
+.template-3 {
+  display: grid; }
+  /* line 93, paragraph.sass */
+  .template-3 .headline {
+    order: 1; }
+    @media (min-width: 480px) {
+      /* line 93, paragraph.sass */
+      .template-3 .headline {
+        order: 2;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 0.5rem 1rem; } }
+  /* line 103, paragraph.sass */
+  .template-3 .subtitle {
+    order: 3; }
+    @media (min-width: 480px) {
+      /* line 103, paragraph.sass */
+      .template-3 .subtitle {
+        grid-row: 4;
+        grid-column: 1/4; } }
+  /* line 108, paragraph.sass */
+  .template-3 .image {
+    order: 2; }
+    @media (min-width: 480px) {
+      /* line 108, paragraph.sass */
+      .template-3 .image {
+        order: 1;
+        grid-row: 1/4;
+        grid-column: 1/4; } }
+  /* line 114, paragraph.sass */
+  .template-3 .content {
+    order: 4; }
+    @media (min-width: 480px) {
+      /* line 114, paragraph.sass */
+      .template-3 .content {
+        grid-row: 5;
+        grid-column: 1/4; } }
+
+/* line 119, paragraph.sass */
+.template-4 {
+  display: grid; }
+  /* line 123, paragraph.sass */
+  .template-4 .headline {
+    order: 1; }
+    @media (min-width: 480px) {
+      /* line 123, paragraph.sass */
+      .template-4 .headline {
+        order: 2;
+        grid-row: 3;
+        grid-column: 1/4;
+        background-color: #00000073;
+        color: white;
+        text-align: center;
+        padding: 0.5rem 1rem; } }
+  /* line 133, paragraph.sass */
+  .template-4 .subtitle {
+    order: 3; }
+    @media (min-width: 480px) {
+      /* line 133, paragraph.sass */
+      .template-4 .subtitle {
+        grid-row: 4;
+        grid-column: 1/4; } }
+  /* line 138, paragraph.sass */
+  .template-4 .image {
+    order: 2; }
+    @media (min-width: 480px) {
+      /* line 138, paragraph.sass */
+      .template-4 .image {
+        order: 1;
+        grid-row: 1/4;
+        grid-column: 1/4; } }
+  /* line 144, paragraph.sass */
+  .template-4 .content {
+    order: 4; }
+    @media (min-width: 480px) {
+      /* line 144, paragraph.sass */
+      .template-4 .content {
+        grid-row: 5;
+        grid-column: 1/4; } }
