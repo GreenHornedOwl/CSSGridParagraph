@@ -47,94 +47,115 @@ button {
   display: flex;
   flex-wrap: wrap;
   align-items: center; }
+  /* line 38, paragraph.sass */
+  #configuration button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem; }
+    /* line 44, paragraph.sass */
+    #configuration button.active {
+      background-color: green; }
 
-/* line 38, paragraph.sass */
+/* line 46, paragraph.sass */
 .paragraph-content {
   border: 1px dashed lightgrey;
   padding: 2rem;
   font-size: 0.6rem; }
   @media (min-width: 768px) {
-    /* line 38, paragraph.sass */
+    /* line 46, paragraph.sass */
     .paragraph-content {
       font-size: 0.8rem; } }
   @media (min-width: 1200px) {
-    /* line 38, paragraph.sass */
+    /* line 46, paragraph.sass */
     .paragraph-content {
       font-size: 1rem; } }
 
-/* line 46, paragraph.sass */
+/* line 54, paragraph.sass */
 .container {
   margin: 0 auto;
   padding: 4rem 0;
   width: 90vw; }
   @media (min-width: 1200px) {
-    /* line 46, paragraph.sass */
+    /* line 54, paragraph.sass */
     .container {
       width: 70vw; } }
 
-/* line 54, paragraph.sass */
+/* line 60, paragraph.sass */
+button {
+  outline: none;
+  border: none; }
+
+/* line 65, paragraph.sass */
 .content p {
   font-size: 1.6em; }
 
-/* line 56, paragraph.sass */
+/* line 67, paragraph.sass */
 .image {
   margin-bottom: 0.5rem; }
 
-/* line 58, paragraph.sass */
+/* line 69, paragraph.sass */
 .headline {
   font-size: 3.2em;
   line-height: 1.2;
   font-weight: 900;
   text-transform: uppercase; }
 
-/* line 63, paragraph.sass */
+/* line 74, paragraph.sass */
 .subtitle {
   font-size: 2.4em;
   line-height: 1.2;
   font-weight: 700;
   color: black; }
+  /* line 79, paragraph.sass */
+  .subtitle--inline {
+    font-size: 2.4em;
+    line-height: 1.2;
+    font-weight: 700;
+    color: black; }
 
-/* line 68, paragraph.sass */
+/* line 84, paragraph.sass */
 .template-1 {
   display: grid; }
-  /* line 70, paragraph.sass */
+  /* line 86, paragraph.sass */
   .template-1 .headline {
     order: 1; }
-  /* line 72, paragraph.sass */
+  /* line 88, paragraph.sass */
   .template-1 .subtitle {
     order: 3; }
-  /* line 74, paragraph.sass */
+  /* line 90, paragraph.sass */
   .template-1 .image {
     order: 2; }
-  /* line 76, paragraph.sass */
+  /* line 92, paragraph.sass */
   .template-1 .content {
     order: 4; }
 
-/* line 78, paragraph.sass */
+/* line 94, paragraph.sass */
 .template-2 {
   display: grid; }
-  /* line 80, paragraph.sass */
+  /* line 96, paragraph.sass */
   .template-2 .headline {
     order: 2;
     margin-bottom: 0; }
-  /* line 83, paragraph.sass */
+  /* line 99, paragraph.sass */
   .template-2 .subtitle {
     order: 3; }
-  /* line 85, paragraph.sass */
+  /* line 101, paragraph.sass */
   .template-2 .image {
     order: 1; }
-  /* line 87, paragraph.sass */
+  /* line 103, paragraph.sass */
   .template-2 .content {
     order: 4; }
 
-/* line 89, paragraph.sass */
+/* line 105, paragraph.sass */
 .template-3 {
   display: grid; }
-  /* line 93, paragraph.sass */
+  /* line 109, paragraph.sass */
   .template-3 .headline {
     order: 1; }
     @media (min-width: 480px) {
-      /* line 93, paragraph.sass */
+      /* line 109, paragraph.sass */
       .template-3 .headline {
         order: 2;
         grid-row: 2/3;
@@ -143,41 +164,83 @@ button {
         color: white;
         text-align: center;
         padding: 0.5rem 1rem; } }
-  /* line 103, paragraph.sass */
+  /* line 119, paragraph.sass */
   .template-3 .subtitle {
     order: 3; }
     @media (min-width: 480px) {
-      /* line 103, paragraph.sass */
+      /* line 119, paragraph.sass */
       .template-3 .subtitle {
         grid-row: 4;
         grid-column: 1/4; } }
-  /* line 108, paragraph.sass */
+  /* line 124, paragraph.sass */
   .template-3 .image {
     order: 2; }
     @media (min-width: 480px) {
-      /* line 108, paragraph.sass */
+      /* line 124, paragraph.sass */
       .template-3 .image {
         order: 1;
         grid-row: 1/4;
         grid-column: 1/4; } }
-  /* line 114, paragraph.sass */
+  /* line 130, paragraph.sass */
   .template-3 .content {
     order: 4; }
     @media (min-width: 480px) {
-      /* line 114, paragraph.sass */
+      /* line 130, paragraph.sass */
       .template-3 .content {
         grid-row: 5;
         grid-column: 1/4; } }
 
-/* line 119, paragraph.sass */
+/* line 135, paragraph.sass */
 .template-4 {
   display: grid; }
-  /* line 123, paragraph.sass */
+  /* line 141, paragraph.sass */
   .template-4 .headline {
     order: 1; }
     @media (min-width: 480px) {
-      /* line 123, paragraph.sass */
+      /* line 141, paragraph.sass */
       .template-4 .headline {
+        order: 2;
+        grid-row: 1/2;
+        grid-column: 1/3;
+        background-color: #00000073;
+        color: white;
+        padding: 0.5rem 1rem;
+        margin: 1rem; } }
+  /* line 151, paragraph.sass */
+  .template-4 .subtitle {
+    order: 3; }
+    @media (min-width: 480px) {
+      /* line 151, paragraph.sass */
+      .template-4 .subtitle {
+        grid-row: 4;
+        grid-column: 1/4; } }
+  /* line 156, paragraph.sass */
+  .template-4 .image {
+    order: 2; }
+    @media (min-width: 480px) {
+      /* line 156, paragraph.sass */
+      .template-4 .image {
+        order: 1;
+        grid-row: 1/4;
+        grid-column: 1/4; } }
+  /* line 162, paragraph.sass */
+  .template-4 .content {
+    order: 4; }
+    @media (min-width: 480px) {
+      /* line 162, paragraph.sass */
+      .template-4 .content {
+        grid-row: 5;
+        grid-column: 1/4; } }
+
+/* line 167, paragraph.sass */
+.template-5 {
+  display: grid; }
+  /* line 171, paragraph.sass */
+  .template-5 .headline {
+    order: 1; }
+    @media (min-width: 480px) {
+      /* line 171, paragraph.sass */
+      .template-5 .headline {
         order: 2;
         grid-row: 3;
         grid-column: 1/4;
@@ -185,28 +248,28 @@ button {
         color: white;
         text-align: center;
         padding: 0.5rem 1rem; } }
-  /* line 133, paragraph.sass */
-  .template-4 .subtitle {
+  /* line 181, paragraph.sass */
+  .template-5 .subtitle {
     order: 3; }
     @media (min-width: 480px) {
-      /* line 133, paragraph.sass */
-      .template-4 .subtitle {
+      /* line 181, paragraph.sass */
+      .template-5 .subtitle {
         grid-row: 4;
         grid-column: 1/4; } }
-  /* line 138, paragraph.sass */
-  .template-4 .image {
+  /* line 186, paragraph.sass */
+  .template-5 .image {
     order: 2; }
     @media (min-width: 480px) {
-      /* line 138, paragraph.sass */
-      .template-4 .image {
+      /* line 186, paragraph.sass */
+      .template-5 .image {
         order: 1;
         grid-row: 1/4;
         grid-column: 1/4; } }
-  /* line 144, paragraph.sass */
-  .template-4 .content {
+  /* line 192, paragraph.sass */
+  .template-5 .content {
     order: 4; }
     @media (min-width: 480px) {
-      /* line 144, paragraph.sass */
-      .template-4 .content {
+      /* line 192, paragraph.sass */
+      .template-5 .content {
         grid-row: 5;
         grid-column: 1/4; } }
